@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01742589141A7B8D004AEBD7 /* Pods_Skinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB996C28BD1AAFB07156CBA /* Pods_Skinema.framework */; };
+		C92F3D452486F302007055BF /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F3D442486F302007055BF /* StorageManager.swift */; };
+		C9956096247A921800BED22D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9956095247A921800BED22D /* CustomTableViewCell.swift */; };
+		C9956098247A986C00BED22D /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9956097247A986C00BED22D /* PlaceModel.swift */; };
+		C995609A247B09CA00BED22D /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9956099247B09CA00BED22D /* NewPlaceViewController.swift */; };
 		C9B454D7247172D800560B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B454D6247172D800560B22 /* AppDelegate.swift */; };
 		C9B454D9247172D800560B22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B454D8247172D800560B22 /* SceneDelegate.swift */; };
 		C9B454DE247172D800560B22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B454DC247172D800560B22 /* Main.storyboard */; };
@@ -16,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38E87D9657F4024F9DC67ADD /* Pods-Skinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skinema.debug.xcconfig"; path = "Target Support Files/Pods-Skinema/Pods-Skinema.debug.xcconfig"; sourceTree = "<group>"; };
+		6B30CCBEC43E5941097FF6BF /* Pods-Skinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skinema.release.xcconfig"; path = "Target Support Files/Pods-Skinema/Pods-Skinema.release.xcconfig"; sourceTree = "<group>"; };
+		AEB996C28BD1AAFB07156CBA /* Pods_Skinema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skinema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92F3D442486F302007055BF /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		C9956095247A921800BED22D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		C9956097247A986C00BED22D /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		C9956099247B09CA00BED22D /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		C9B454D3247172D800560B22 /* Skinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B454D6247172D800560B22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9B454D8247172D800560B22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01742589141A7B8D004AEBD7 /* Pods_Skinema.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		852545914037966D2F4C71B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38E87D9657F4024F9DC67ADD /* Pods-Skinema.debug.xcconfig */,
+				6B30CCBEC43E5941097FF6BF /* Pods-Skinema.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B19594F36EC2E1EE827FDADA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEB996C28BD1AAFB07156CBA /* Pods_Skinema.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9B454CA247172D800560B22 = {
 			isa = PBXGroup;
 			children = (
 				C9B454D5247172D800560B22 /* Skinema */,
 				C9B454D4247172D800560B22 /* Products */,
+				852545914037966D2F4C71B0 /* Pods */,
+				B19594F36EC2E1EE827FDADA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +89,11 @@
 			isa = PBXGroup;
 			children = (
 				C9B454D6247172D800560B22 /* AppDelegate.swift */,
+				C9956095247A921800BED22D /* CustomTableViewCell.swift */,
 				C9B454EA2471736A00560B22 /* MainViewController.swift */,
+				C9956099247B09CA00BED22D /* NewPlaceViewController.swift */,
+				C9956097247A986C00BED22D /* PlaceModel.swift */,
+				C92F3D442486F302007055BF /* StorageManager.swift */,
 				C9B454D8247172D800560B22 /* SceneDelegate.swift */,
 				C9B454DC247172D800560B22 /* Main.storyboard */,
 				C9B454DF247172D900560B22 /* Assets.xcassets */,
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9B454E7247172D900560B22 /* Build configuration list for PBXNativeTarget "Skinema" */;
 			buildPhases = (
+				76C58BA4B2F4E935E5C890E6 /* [CP] Check Pods Manifest.lock */,
 				C9B454CF247172D800560B22 /* Sources */,
 				C9B454D0247172D800560B22 /* Frameworks */,
 				C9B454D1247172D800560B22 /* Resources */,
+				C73105B2F94727E387BF998D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +171,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76C58BA4B2F4E935E5C890E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Skinema-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C73105B2F94727E387BF998D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skinema/Pods-Skinema-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skinema/Pods-Skinema-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skinema/Pods-Skinema-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9B454CF247172D800560B22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C9B454EB2471736A00560B22 /* MainViewController.swift in Sources */,
+				C995609A247B09CA00BED22D /* NewPlaceViewController.swift in Sources */,
 				C9B454D7247172D800560B22 /* AppDelegate.swift in Sources */,
+				C92F3D452486F302007055BF /* StorageManager.swift in Sources */,
+				C9956098247A986C00BED22D /* PlaceModel.swift in Sources */,
+				C9956096247A921800BED22D /* CustomTableViewCell.swift in Sources */,
 				C9B454D9247172D800560B22 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +366,7 @@
 		};
 		C9B454E8247172D900560B22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E87D9657F4024F9DC67ADD /* Pods-Skinema.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,12 +379,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Hyperprism.Skinema;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C9B454E9247172D900560B22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B30CCBEC43E5941097FF6BF /* Pods-Skinema.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +398,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Hyperprism.Skinema;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
