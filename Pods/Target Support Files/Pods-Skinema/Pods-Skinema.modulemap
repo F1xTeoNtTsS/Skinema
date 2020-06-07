@@ -1,6 +1,0 @@
-framework module Pods_Skinema {
-  umbrella header "Pods-Skinema-umbrella.h"
-
-  export *
-  module * { export * }
-}
