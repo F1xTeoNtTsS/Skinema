@@ -36,8 +36,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         //Setup the serch controller
         searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search places"
+        searchController.hidesNavigationBarDuringPresentation = true
         navigationItem.searchController = searchController
         definesPresentationContext = true
     }

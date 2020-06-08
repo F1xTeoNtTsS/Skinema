@@ -181,13 +181,11 @@
         <scene sceneID="PAx-kq-z5I">
             <objects>
                 <viewController id="UO7-gB-W49" customClass="MainViewController" customModule="Skinema" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="shs-NZ-gvr">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shs-NZ-gvr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mur-9U-cmr">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mur-9U-cmr">
                                 <rect key="frame" x="0.0" y="127" width="375" height="685"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="23f-fm-46e" customClass="CustomTableViewCell" customModule="Skinema" customModuleProvider="target">
@@ -251,7 +249,7 @@
                                     <outlet property="delegate" destination="UO7-gB-W49" id="NgZ-bC-I5y"/>
                                 </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8va-Sh-kfD">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8va-Sh-kfD">
                                 <rect key="frame" x="0.0" y="88" width="375" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="7bq-Av-yus"/>
@@ -267,9 +265,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Mur-9U-cmr" firstAttribute="leading" secondItem="DcS-7M-alN" secondAttribute="leading" id="DA8-gk-2xM"/>
+                            <constraint firstAttribute="bottom" secondItem="Mur-9U-cmr" secondAttribute="bottom" id="FxW-Vb-G3D"/>
                             <constraint firstItem="8va-Sh-kfD" firstAttribute="top" secondItem="DcS-7M-alN" secondAttribute="top" id="J1x-d7-29b"/>
+                            <constraint firstItem="Mur-9U-cmr" firstAttribute="top" secondItem="8va-Sh-kfD" secondAttribute="bottom" constant="1" id="fs7-f9-egS"/>
                             <constraint firstItem="8va-Sh-kfD" firstAttribute="leading" secondItem="DcS-7M-alN" secondAttribute="leading" id="sEg-AJ-IGo"/>
-                            <constraint firstItem="Mur-9U-cmr" firstAttribute="top" secondItem="8va-Sh-kfD" secondAttribute="bottom" constant="1" id="xld-ik-rUK"/>
+                            <constraint firstItem="Mur-9U-cmr" firstAttribute="trailing" secondItem="DcS-7M-alN" secondAttribute="trailing" id="uBI-jT-h2L"/>
                             <constraint firstItem="DcS-7M-alN" firstAttribute="trailing" secondItem="8va-Sh-kfD" secondAttribute="trailing" id="yvc-fq-Sqg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DcS-7M-alN"/>
