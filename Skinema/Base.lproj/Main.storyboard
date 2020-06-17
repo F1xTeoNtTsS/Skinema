@@ -144,6 +144,23 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="140" id="5aO-7D-coJ">
+                                        <rect key="frame" x="0.0" y="503" width="375" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5aO-7D-coJ" id="Oe5-hy-dgO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="251.99999999999997" placeholderIntrinsicHeight="44" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MfE-Jg-bOH" customClass="RatingControl" customModule="Skinema" customModuleProvider="target">
+                                                    <rect key="frame" x="61.666666666666657" y="48" width="251.99999999999997" height="44"/>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="MfE-Jg-bOH" firstAttribute="centerY" secondItem="Oe5-hy-dgO" secondAttribute="centerY" id="cAw-RC-zLT"/>
+                                                <constraint firstItem="MfE-Jg-bOH" firstAttribute="centerX" secondItem="Oe5-hy-dgO" secondAttribute="centerX" id="tR3-TG-XSD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -169,6 +186,7 @@
                         <outlet property="placeLocation" destination="jbe-GB-EOA" id="SyP-NN-0t2"/>
                         <outlet property="placeName" destination="75h-19-zEx" id="mo3-nd-ylz"/>
                         <outlet property="placeType" destination="uKx-99-5m0" id="jl2-Pb-YnR"/>
+                        <outlet property="ratingControl" destination="MfE-Jg-bOH" id="HHt-eC-lux"/>
                         <outlet property="saveButton" destination="deu-Ms-OKf" id="2De-Er-U9w"/>
                     </connections>
                 </tableViewController>
