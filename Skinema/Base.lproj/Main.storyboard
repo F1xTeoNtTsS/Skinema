@@ -193,7 +193,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5dI-hH-imk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="LF6-Vr-Tbo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1148" y="43"/>
+            <point key="canvasLocation" x="1148" y="42.857142857142861"/>
         </scene>
         <!--My Places-->
         <scene sceneID="PAx-kq-z5I">
@@ -221,39 +221,56 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="R6i-IN-BNU">
-                                                    <rect key="frame" x="95" y="8" width="264" height="69"/>
+                                                    <rect key="frame" x="95" y="8" width="167" height="69"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ay-ic-Wsn">
-                                                            <rect key="frame" x="0.0" y="0.0" width="264" height="24.333333333333332"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="167" height="24.333333333333332"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZy-FS-Sjm">
-                                                            <rect key="frame" x="0.0" y="27.333333333333336" width="264" height="20.333333333333336"/>
+                                                            <rect key="frame" x="0.0" y="27.333333333333336" width="167" height="20.333333333333336"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgn-eE-seJ">
-                                                            <rect key="frame" x="0.0" y="50.666666666666664" width="264" height="18.333333333333336"/>
+                                                            <rect key="frame" x="0.0" y="50.666666666666664" width="167" height="18.333333333333336"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="90" placeholderIntrinsicHeight="14" translatesAutoresizingMaskIntoConstraints="NO" id="dpK-dU-VBc" customClass="CosmosView" customModule="Cosmos">
+                                                    <rect key="frame" x="270" y="35.666666666666664" width="90" height="14"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="90" id="A10-sa-FWB"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="14"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="filledStar"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="emptyStar"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="R6i-IN-BNU" secondAttribute="bottom" constant="8" id="Fp1-oS-bzs"/>
                                                 <constraint firstItem="R6i-IN-BNU" firstAttribute="top" secondItem="4ih-5e-ctV" secondAttribute="top" constant="8" id="G0F-tV-39z"/>
-                                                <constraint firstAttribute="trailing" secondItem="R6i-IN-BNU" secondAttribute="trailing" constant="16" id="Iv1-35-mrh"/>
+                                                <constraint firstItem="dpK-dU-VBc" firstAttribute="centerY" secondItem="4ih-5e-ctV" secondAttribute="centerY" id="Y2h-mu-SzS"/>
                                                 <constraint firstItem="R6i-IN-BNU" firstAttribute="leading" secondItem="N5L-Cf-GxR" secondAttribute="trailing" constant="15" id="aGL-fp-EPw"/>
                                                 <constraint firstItem="N5L-Cf-GxR" firstAttribute="leading" secondItem="4ih-5e-ctV" secondAttribute="leading" constant="15" id="eSu-a9-OeC"/>
                                                 <constraint firstItem="N5L-Cf-GxR" firstAttribute="centerY" secondItem="4ih-5e-ctV" secondAttribute="centerY" id="feu-Qz-FH8"/>
+                                                <constraint firstItem="dpK-dU-VBc" firstAttribute="trailing" secondItem="4ih-5e-ctV" secondAttribute="trailingMargin" id="maH-7D-ykI"/>
+                                                <constraint firstItem="dpK-dU-VBc" firstAttribute="leading" secondItem="R6i-IN-BNU" secondAttribute="trailing" constant="8" id="yUK-fT-kDR"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="cosmosView" destination="dpK-dU-VBc" id="3S7-Wt-iSq"/>
                                             <outlet property="imageOfPlace" destination="N5L-Cf-GxR" id="GFq-mE-Dg7"/>
                                             <outlet property="locationLabel" destination="hZy-FS-Sjm" id="gax-rf-00c"/>
                                             <outlet property="nameLabel" destination="4ay-ic-Wsn" id="cEG-eH-6qc"/>
@@ -365,5 +382,7 @@
     <resources>
         <image name="AZ" width="25" height="24"/>
         <image name="Photo" width="194.66667175292969" height="195.66667175292969"/>
+        <image name="emptyStar" width="255" height="256"/>
+        <image name="filledStar" width="237.5" height="238"/>
     </resources>
 </document>
