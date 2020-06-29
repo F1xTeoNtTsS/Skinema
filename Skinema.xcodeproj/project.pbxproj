@@ -18,6 +18,8 @@
 		C9B454E0247172D900560B22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B454DF247172D900560B22 /* Assets.xcassets */; };
 		C9B454E3247172D900560B22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B454E1247172D900560B22 /* LaunchScreen.storyboard */; };
 		C9B454EB2471736A00560B22 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B454EA2471736A00560B22 /* MainViewController.swift */; };
+		C9DABCE3249C0A1500C68D35 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DABCE2249C0A1500C68D35 /* MapViewController.swift */; };
+		C9FAF05E249819FE0082C2D8 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FAF05D249819FE0082C2D8 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +30,7 @@
 		C9956095247A921800BED22D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		C9956097247A986C00BED22D /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		C9956099247B09CA00BED22D /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
-		C9B454D3247172D800560B22 /* Skinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B454D3247172D800560B22 /* FavPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B454D6247172D800560B22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9B454D8247172D800560B22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C9B454DD247172D800560B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		C9B454E2247172D900560B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9B454E4247172D900560B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9B454EA2471736A00560B22 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C9DABCE2249C0A1500C68D35 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C9FAF05D249819FE0082C2D8 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,7 @@
 		C9B454D4247172D800560B22 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C9B454D3247172D800560B22 /* Skinema.app */,
+				C9B454D3247172D800560B22 /* FavPlace.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,12 +93,14 @@
 			isa = PBXGroup;
 			children = (
 				C9B454D6247172D800560B22 /* AppDelegate.swift */,
-				C9956095247A921800BED22D /* CustomTableViewCell.swift */,
 				C9B454EA2471736A00560B22 /* MainViewController.swift */,
 				C9956099247B09CA00BED22D /* NewPlaceViewController.swift */,
+				C9DABCE2249C0A1500C68D35 /* MapViewController.swift */,
 				C9956097247A986C00BED22D /* PlaceModel.swift */,
 				C92F3D442486F302007055BF /* StorageManager.swift */,
 				C9B454D8247172D800560B22 /* SceneDelegate.swift */,
+				C9956095247A921800BED22D /* CustomTableViewCell.swift */,
+				C9FAF05D249819FE0082C2D8 /* RatingControl.swift */,
 				C9B454DC247172D800560B22 /* Main.storyboard */,
 				C9B454DF247172D900560B22 /* Assets.xcassets */,
 				C9B454E1247172D900560B22 /* LaunchScreen.storyboard */,
@@ -122,7 +128,7 @@
 			);
 			name = Skinema;
 			productName = Skinema;
-			productReference = C9B454D3247172D800560B22 /* Skinema.app */;
+			productReference = C9B454D3247172D800560B22 /* FavPlace.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -222,6 +228,8 @@
 				C995609A247B09CA00BED22D /* NewPlaceViewController.swift in Sources */,
 				C9B454D7247172D800560B22 /* AppDelegate.swift in Sources */,
 				C92F3D452486F302007055BF /* StorageManager.swift in Sources */,
+				C9DABCE3249C0A1500C68D35 /* MapViewController.swift in Sources */,
+				C9FAF05E249819FE0082C2D8 /* RatingControl.swift in Sources */,
 				C9956098247A986C00BED22D /* PlaceModel.swift in Sources */,
 				C9956096247A921800BED22D /* CustomTableViewCell.swift in Sources */,
 				C9B454D9247172D800560B22 /* SceneDelegate.swift in Sources */,
@@ -376,8 +384,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Hyperprism.Skinema;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Hyperprism.FavPlace;
+				PRODUCT_NAME = FavPlace;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -395,8 +403,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Hyperprism.Skinema;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Hyperprism.FavPlace;
+				PRODUCT_NAME = FavPlace;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
