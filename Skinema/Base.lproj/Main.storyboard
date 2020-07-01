@@ -121,7 +121,7 @@
                                                     </constraints>
                                                     <state key="normal" image="Placeholder"/>
                                                     <connections>
-                                                        <segue destination="8Fc-zM-iL8" kind="presentation" identifier="getAdress" modalPresentationStyle="fullScreen" id="qvE-od-R0a"/>
+                                                        <segue destination="8Fc-zM-iL8" kind="presentation" identifier="getAddress" modalPresentationStyle="fullScreen" id="qvE-od-R0a"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -275,7 +275,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="doneButtonPressed" destination="8Fc-zM-iL8" eventType="touchUpInside" id="jsh-RZ-D6A"/>
                                     <action selector="doneButtonPressed:" destination="8Fc-zM-iL8" eventType="touchUpInside" id="sts-i8-uhs"/>
+                                    <action selector="doneButtonPressedd:" destination="8Fc-zM-iL8" eventType="touchUpInside" id="sHL-r1-lwq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -301,7 +303,7 @@
                         <viewLayoutGuide key="safeArea" id="u65-JY-epa"/>
                     </view>
                     <connections>
-                        <outlet property="adressLabel" destination="bMk-l9-ngZ" id="zJ5-es-q93"/>
+                        <outlet property="addressLabel" destination="bMk-l9-ngZ" id="zJ5-es-q93"/>
                         <outlet property="doneButton" destination="cPI-PE-Xrt" id="ZcH-D7-RoX"/>
                         <outlet property="mapPinImage" destination="pZl-A4-TWk" id="quF-50-Xv2"/>
                         <outlet property="mapView" destination="BhA-ca-qSq" id="tsW-Fk-1az"/>
@@ -494,7 +496,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="N5v-uL-W2H"/>
+        <segue reference="qvE-od-R0a"/>
         <segue reference="3xA-6t-TuI"/>
     </inferredMetricsTieBreakers>
     <resources>
