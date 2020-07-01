@@ -33,11 +33,17 @@ class MapViewController: UIViewController {
         addressLabel.text = ""
         mapView.delegate = self
         setupMapView()
-        checkLocationServices()
+        //checkLocationServices()
+        
+        // Set initial location in Saint P
+        let initialLocation = CLLocation(latitude: 59.9311, longitude: 30.3309)
+        mapView.centerToLocation(initialLocation)
     }
     
     @IBAction func centerViewInUserLocation() {
         showUserLocation()
+        self.showAlert(title: "Oops", message: "This button doesn't seem to work 🌚")
+        
     }
     
     @IBAction func doneButtonPressed() {
@@ -105,7 +111,8 @@ class MapViewController: UIViewController {
     
     private func setupLocationManager() {
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        locationManager.startUpdatingLocation()
     }
     
     private func checkLocationAuthorization() {
@@ -127,7 +134,7 @@ class MapViewController: UIViewController {
         case .restricted:
             break
         case .authorizedAlways:
-            break
+            locationManager.requestAlwaysAuthorization()
         @unknown default:
             print("New case is available")
         }
@@ -224,4 +231,17 @@ extension MapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         checkLocationAuthorization()
     }
+}
+
+extension MKMapView {
+  func centerToLocation(
+    _ location: CLLocation,
+    regionRadius: CLLocationDistance = 15_000.000
+  ) {
+    let coordinateRegion = MKCoordinateRegion(
+      center: location.coordinate,
+      latitudinalMeters: regionRadius,
+      longitudinalMeters: regionRadius)
+    setRegion(coordinateRegion, animated: true)
+  }
 }
