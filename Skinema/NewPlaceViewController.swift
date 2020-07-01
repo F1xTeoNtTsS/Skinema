@@ -98,6 +98,7 @@ class NewPlaceViewController: UITableViewController {
                 currentPlace?.imageData = newPlace.imageData
                 currentPlace?.rating = newPlace.rating
             }
+            
         } else {
             StorageManager.saveObject(newPlace)
         }
