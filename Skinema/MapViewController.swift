@@ -43,7 +43,6 @@ class MapViewController: UIViewController {
     @IBAction func centerViewInUserLocation() {
         showUserLocation()
         self.showAlert(title: "Oops", message: "This button doesn't seem to work 🌚")
-        
     }
     
     @IBAction func doneButtonPressed() {
@@ -80,13 +79,11 @@ class MapViewController: UIViewController {
             guard let placemarks = placemarks else { return }
             
             let placemark = placemarks.first
-            
             let annotation = MKPointAnnotation()
             annotation.title = self.place.name
             annotation.subtitle = self.place.type
             
             guard let placemarkLocation = placemark?.location else { return }
-            
             annotation.coordinate = placemarkLocation.coordinate
             
             self.mapView.showAnnotations([annotation], animated: true)
@@ -128,7 +125,6 @@ class MapViewController: UIViewController {
                     message: "To give permission Go to: Setting -> MyPlaces -> Location"
                 )
             }
-            break
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
         case .restricted:
@@ -166,7 +162,6 @@ class MapViewController: UIViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
-    
 }
 
 extension MapViewController: MKMapViewDelegate {
